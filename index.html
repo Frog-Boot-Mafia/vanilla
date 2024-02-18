@@ -10,26 +10,82 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
 	<link rel="icon" href="9c06213464ad89ad35a001df5d5122adf12ea875_full.jpg">
+  <script src="https://kit.fontawesome.com/b6a8197bf1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="dimmer"></div>
-  <video autoplay muted loop id="myVideo">
-    <source src="bg.mp4" type="video/mp4">
-  </video>
   <div class="header">
     <div>
       <img class="logo" src="9c06213464ad89ad35a001df5d5122adf12ea875_full.jpg" alt="FBM Logo">
-      <a href="https://rust-servers.net/server/172298/"><img src="https://rust-servers.net/server/172298/banners/banner-4.png" border="0"></a>
+      <a href="https://rust-servers.net/server/172298/" target="_blank"><img src="https://rust-servers.net/server/172298/banners/banner-4.png" border="0"></a>
   	</div>
 		<ul class="nav">
 			<li class="active"><a href="/">Main</a></li>
 			<li class=""><a href="https://frog-boot-mafia.github.io/RUST-10X-Server/">Private 10X</a></li>
 		</ul>
   </div>
-	<div class="main-content">
-        <p>Do not launch RUST before clicking this link.</p>
-		<a class="btn" href="steam://run/252490//+connect%2067.225.85.57:28015">Join Server Now</a>
-		<a class="btn" target="_blank" href="https://discord.gg/ayQbum6Q">Join our Discord</a>
-	</div>
+  <section class="landing">
+    <div class="dimmer"></div>
+    <video autoplay muted loop id="myVideo">
+      <source src="bg.mp4" type="video/mp4">
+    </video>
+    <div class="main-content">
+      <p>Do not launch RUST before clicking this link.</p>
+      <a class="btn" href="steam://run/252490//+connect%2067.225.85.57:28015">Join Server Now</a>
+      <a href="https://discord.gg/QZYCHASj" class="btn" style="margin-top: 32px;">Join Discord</a>
+    </div>
+    <a href="#connect"><i class="fa-solid fa-angles-down"></i></a>
+  </section>
+  <section class="connect" id="connect">
+    <div class="container">
+      <h2>Connecting via console...</h2>
+      <p>Open RUST and press F1 to open the console. Copy and paste the following command into the console and press enter.</p>
+      <code id="code--connect">client.connect 67.225.85.57:28015</code>
+      <p>After pressing enter, you should start loading in and it will say the server name is Amsterdam II - 223/500 pop.</p>
+    </div>
+    <a href="#favorite"><i class="fa-solid fa-angles-down"></i></a>
+  </section>
+  <section class="favorite" id="favorite">
+    <div class="container">
+      <h2>Favorite the server</h2>
+      <div class="step">
+        <h3>1.</h3>
+        <div>
+          <img src="step-1.png" alt="Step 1">
+          <p>Open Steam and click the "View" dropdown in the top left.</p>
+        </div>
+      </div>
+      <div class="step">
+        <h3>2.</h3>
+        <div>
+          <img src="step-2.png" alt="Step 2">
+          <p>In the dropdown menu, click "Game Servers".</p>
+        </div>
+      </div>
+      <div class="step">
+        <h3>3.</h3>
+        <div>
+          <img src="step-3.png" alt="Step 3">
+          <p>Navigate to the "Favorites" tab in the Game Servers UI.</p>
+        </div>
+      </div>
+      <div class="step">
+        <h3>4.</h3>
+        <div>
+          <img src="step-4.png" alt="Step 4">
+          <p>Click the "+" button at the bottom of the UI.</p>
+        </div>
+      </div>
+      <div class="step">
+        <h3>5.</h3>
+        <div>
+          <p>Copy this address:</p>
+          <code id="code--favorite">67.225.85.57:28014</code>
+          <p>and click "OK".</p>
+          <img src="step-5.png" alt="Step 5">
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="scripts.js"></script>
 </body>
 </html>
