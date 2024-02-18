@@ -55,7 +55,7 @@ html {
     display: flex;
     flex-direction: row;
     padding-inline: 96px;
-    background-color: rgb(29, 12, 12);
+    background-color: rgb(5, 7, 15);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
   
@@ -151,8 +151,8 @@ html {
     background: linear-gradient(45deg,
             #ffffff,
             #d6d6d6,
-            #250404,
-            #4b0909,
+            #040e25,
+            #09154b,
             #292929);
     position: absolute;
     top: -2px;
